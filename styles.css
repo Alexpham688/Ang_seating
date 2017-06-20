@@ -22,12 +22,12 @@
   text-align: center;
 }
 form {
-  height:400px;
+  height:420px;
   width: 330px;
   position: absolute;
   border-radius:15px;
   background-color:white;
-  margin:-40px;
+  margin:-60px;
 
 }
 body {
