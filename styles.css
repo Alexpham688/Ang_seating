@@ -1,0 +1,81 @@
+.seat {
+  background-image: url("images/chair.png");
+  width:80px;
+  height:80px;
+  border: 2px solid orange;
+  display:inline-block;
+  margin: 20px auto;
+  text-align: center;
+  background-size:cover;
+}
+.row1 {
+  margin:0 auto;
+  text-align: center;
+}
+.row2 {
+  text-align: center;
+}
+.row3 {
+  text-align: center;
+}
+.row4 {
+  text-align: center;
+}
+form {
+  height:400px;
+  width: 330px;
+  position: absolute;
+  border-radius:15px;
+  background-color:white;
+  margin:-40px;
+
+}
+body {
+  background-image: url("images/curtain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header1 {
+  border: 2px solid blue;
+  width:600px;
+  height: 80px;
+  margin:0 auto;
+  text-align: center;
+  font-family:rainbow_bridge;
+  font-size: 5em;
+  color: white;
+}
+@font-face {
+  font-family: "rainbow_bridge";
+  src:url("rainbow_bridge/rainbow_bridge.ttf");
+}
+.header2 {
+  text-align: center;
+  font-family:rainbow_bridge;
+  color:white;
+}
+@font-face {
+  font-family: "rainbow_bridge";
+  src:url("rainbow_bridge/rainbow_bridge.ttf");
+}
+.navSection {
+  border:2px solid orange;
+  width:600px;
+  height:60px;
+  margin:0 auto;
+  text-align: center;
+  font-family:rainbow_bridge;
+}
+@font-face {
+  font-family: "rainbow_bridge";
+  src:url("rainbow_bridge/rainbow_bridge.ttf")
+}
+button {
+  border-radius: 10px;
+  background-color: #000;
+  color:white;
+}
+.formContainer {
+  margin:0 auto;
+  text-align: center;
+}

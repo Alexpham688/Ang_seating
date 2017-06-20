@@ -1,0 +1,35 @@
+<!-- <div class="formContainer" -->
+  <form id="form" ng-show="formShow" ng-repeat="item in getSeatArray ">
+    <div class="col-sm-8" "col-xs-10">
+      <h3>Personal Information</h3>
+      <p>Fill out this form to reserve your seat</p>
+      <div class="formFeedback">
+        <label for="firstName">First Name</label>
+        <input class="formInput" type="text" required placeholder="First Name" autofocus ng-model="item.firstName">
+        <i class="glyphicon glyphicon-user"></i>
+      </div>
+      <div class="formFeedback">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="formInput" required placeholder="Last Name" autofocus ng-model="item.lastName">
+        <i class="glyphicon glyphicon-user"></i>
+      </div>
+      <div class="formFeedback">
+        <label for="Email">Email</label>
+        <input type="text" class="formInput" required placeholder="Email" autofocus ng-model="item.email">
+        <i class="glyphicon glyphicon-envelope"></i>
+      </div>
+      <div class="formFeedback">
+        <label for="Phone Number">Phone Number</label>
+        <input type="number" class="formInput" required placeholder="555-555-5555" autofocus ng-model="item.phoneNumber">
+        <i class="glyphicon glyphicon-earphone"></i>
+      </div>
+      <div class="formGroup">
+        <input type="text" class="formControl" value="">
+        <label for="seatNumber" class="reservedSeat">Seat</label>
+      </div>
+      <div class="formGroup">
+        <input type="button" value="Submit" ng>
+      </div>
+    </div>
+  </form>
+</div>

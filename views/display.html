@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Theater Seating</title>
+  </head>
+  <body>
+    <div class="header2">
+      <h1>SIEGE DE CINEMA</h1>
+    </div>
+    <div class="container" ng-model="formShow" ng-controller="formCtrl">
+      <form id="form" ng-show="formShow">
+        <div class="col-sm-8" "col-xs-10">
+          <h3>Personal Information</h3>
+          <p>Fill out this form to reserve your seat</p>
+          <div class="formFeedback">
+            <label for="firstName">First Name</label>
+            <input class="formInput" type="text" required placeholder="First Name"  ng-model="item.firstName" autofocus>
+            <i class="glyphicon glyphicon-user"></i>
+          </div>
+          <div class="formFeedback">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="formInput" required placeholder="Last Name" ng-model="item.lastName"autofocus>
+            <i class="glyphicon glyphicon-user"></i>
+          </div>
+          <div class="formFeedback">
+            <label for="Email">Email</label>
+            <input type="text" class="formInput" required placeholder="Email" ng-model="item.email" autofocus>
+            <i class="glyphicon glyphicon-envelope"></i>
+          </div>
+          <div class="formFeedback">
+            <label for="Phone Number">Phone Number</label>
+            <input type="number" class="formInput" required placeholder="555-555-5555" ng-model="item.phoneNumber" autofocus>
+            <i class="glyphicon glyphicon-earphone"></i>
+          </div>
+          <div class="formGroup" ng-model="item.seatNumber">
+            <input type="text" class="formControl" value="#" ng-model="item.seatNumber">
+            <label for="seatNumber" class="reservedSeat">Seat</label>
+          </div>
+          <div class="formGroup">
+            <button type="button"  ng-click=addItem(item.firstName,item.lastName,item.email,item.phoneNumber,item.seatNumber);(formShow=false)>Submit</button>
+          </div>
+        </div>
+      </form>
+       <div class="row1" "col-lg-8" "col-sm-10">
+         <button class="seat" id="1" ng-click="formShow=true">1</button>
+         <button class="seat" id="2"
+         ng-click="formShow=true"<>2</button>
+         <button class="seat" id="3" ng-click="formShow=true">3</button>
+      </div>
+      <div class="row2" "col-lg-8" "col-sm-10">
+        <button class="seat" id="4" ng-click="formShow=true">4</button>
+        <button class="seat" id="5" ng-click="formShow=true">5</button>
+        <button class="seat" id="6" ng-click="formShow=true">6</button>
+        <button class="seat" id="7" ng-click="formShow=true">7</button>
+        <button class="seat" id="8" ng-click="formShow=true">8</button>
+      </div>
+      <div class="row3" "col-lg-8" "col-sm-10">
+        <button class="seat" id="9"
+        ng-click="formShow=true"></button>
+        <button class="seat" id="10" ng-click="formShow=true"></button>
+        <button class="seat" id="11" ng-click="formShow=true"></button>
+        <button class="seat" id="12" ng-click="formShow=true"></button>
+        <button class="seat" id="13" ng-click="formShow=true"></button>
+        <buttonclass="seat" id="14"
+        ng-click="formShow=true"></button>
+        <button class="seat" id="15" ng-click="formShow=true"></button>
+      </div>
+      <div class="row4" "col-lg-8" "col-sm-10">
+        <button class="seat" id="16" ng-click="formShow=true"></button>
+        <button class="seat" id="17" ng-click="formShow=true"></button>
+        <button class="seat" id="18" ng-click="formShow=true"></button>
+        <button class="seat" id="19" ng-click="formShow=true"></button>
+        <button class="seat" id="20" ng-click="formShow=true"></button>
+        <button class="seat" id="21" ng-click="formShow=true"></button>
+        <button class="seat" id="22" ng-click="formShow=true"></button>
+        <button class="seat" id="23" ng-click="formShow=true"></button>
+        <button class="seat" id="24" ng-click="formShow=true"></button>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
