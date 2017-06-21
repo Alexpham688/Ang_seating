@@ -14,8 +14,19 @@
       </div>
       <div class="navSection">
         <nav class="button1">
+          <a href="#!/"><button type="button">CINEMA</button></a>
           <a href="#!/display"><button type="button">ENTRER</button></a>
         </nav>
+      </div>
+
+      <div  class="slideCtrl"ng-controller="carouselCtrl">
+        <div class="slideContainer">
+          <carousel interval = "myInterval">
+            <slide ng-repeat="slide in slides"active="slide.active">
+              <img ng-src="{{slide.image}}">
+            </slide>
+          </carousel>
+        </div>
       </div>
       <div class="">
         <ng-view></ng-view>
@@ -31,10 +42,11 @@
 
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
-    <!-- <script src="lib/angular-animate.min.js"></script> -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
     <script src="app.js"></script>
     <script src="formCtrl.js"></script>
     <script src="displayCtrl.js"></script>
+    <script src="carousel.js"></script>
     <script src="formService.js"></script>
   </body>
 </html>

@@ -79,3 +79,17 @@ button {
   margin:0 auto;
   text-align: center;
 }
+img {
+  margin: auto;
+  width:800px;
+}
+
+.slideCtrl {
+  position:absolute;
+  width:800px;
+  height:400px;
+  left:50%;
+  top:180px;
+  margin-left:-400px;
+
+}
