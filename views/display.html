@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Theater Seating</title>
+    <title>Angular Seating</title>
   </head>
   <body>
     <div class="header2">
-      <h1>SIEGE DE CINEMA</h1>
+      <h1>RESERVER ICI</h1>
     </div>
     <div class="container" ng-model="formShow" ng-controller="formCtrl">
       <form id="form" ng-show="formShow">
@@ -38,7 +38,7 @@
             <label for="seatNumber" class="reservedSeat">Seat</label>
           </div>
           <div class="formGroup">
-            <button type="button"  ng-click=addItem(item.firstName,item.lastName,item.email,item.phoneNumber,item.seatNumber);(formShow=false)>Submit</button>
+            <button type="button"  ng-click=addItem(item.firstName,item.lastName,item.email,item.phoneNumber,item.seatNumber);(formShow=false)><a href="#!/form">Submit</a></button>
           </div>
         </div>
       </form>

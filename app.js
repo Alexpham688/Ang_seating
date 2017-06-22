@@ -1,9 +1,15 @@
-var app = angular.module("myApp",["ngRoute"]);
+var app = angular.module("myApp",["ui.bootstrap","ngRoute"]);
 app.config(function($routeProvider){
   $routeProvider.when('/display',{
-    templateUrl:"views/display.html",
+    controller:"displayCtrl",
+    templateUrl:"views/display.html"
+  })
+  .when("/carousel",{
+    controller:"carouselCtrl",
+    templateUrl:"views/carousel.html"
   })
   .otherwise ({
-    redirectTo:'/'
+    redirectTo:"/display"
+
   });
 });

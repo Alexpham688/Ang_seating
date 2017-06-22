@@ -31,7 +31,7 @@ form {
 
 }
 body {
-  background-image: url("images/curtain.jpg");
+  background-image: url("images/curtain2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,7 +89,7 @@ img {
   width:800px;
   height:400px;
   left:50%;
-  top:180px;
+  top:170px;
   margin-left:-400px;
 
 }

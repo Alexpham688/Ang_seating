@@ -1,5 +1,5 @@
 var app = angular.module("myApp");
-app.factory("formService", function($http){
+app.factory("formService", function($scope){
   var formArray = [];
   function addToSeat(item){
   console.log(item);

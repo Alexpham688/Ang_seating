@@ -1,4 +1,4 @@
-var app = angular.module("myApp");
+var app = angular.module("myApp",["ui.bootstrap","ngRoute"]);
 app.controller("formCtrl", function($scope){
   $scope.seatInfo = [];
   $scope.item = {
